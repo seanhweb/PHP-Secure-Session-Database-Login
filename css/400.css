@@ -1,0 +1,27 @@
+
+.container {
+max-width: 95%;
+min-width: 310px;
+}
+
+
+.grid-primary {
+width:100%;
+display:block;
+margin:0 auto;
+float:none;
+padding-right:0;
+}
+
+
+.grid-secondary {
+display:block;
+width:100%;
+float:none;
+min-width:0;
+}
+
+.grid-primary, .grid-secondary {
+ margin:20px auto; 
+width:95%;
+}

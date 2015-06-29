@@ -1,0 +1,173 @@
+/*
+Sean's CSS Skeleton
+*/
+@import url('reset.css');
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+
+body {
+background:#eee;   
+font-family: 'Open Sans', sans-serif;
+}
+
+
+p {
+font-size:14px;
+line-height:18px;
+}
+
+b {
+ font-weight:bold;   
+}
+
+header nav {
+    font-family: 'Oswald', sans-serif;   
+    font-weight:400;
+    text-transform:uppercase;
+}
+
+header {
+background:#000;
+overflow:hidden;
+}
+
+header nav ul li{
+    padding:0 10px;
+    border-left:1px solid #fff;
+    display:inline-block;
+}
+
+nav a {
+ text-decoration:none; 
+color:#FFF;
+}
+
+h1 {
+ font-size:2em;   
+}
+
+h2 {
+ font-size:1.5em;   
+}
+
+h3 {
+ font-size:1.17em;   
+}
+
+h4 {
+ font-size:1.12em;   
+}
+
+h5 {
+ font-size:.83em;   
+}
+
+h6 {
+ font-size:.75em;   
+}
+nav ul {
+    margin:0;   
+}
+
+nav ul li {
+    margin-left:0;
+}
+
+ul {
+ margin-top:5px;   
+}
+
+ul li {
+    margin-top:2px;
+    margin-left:15px;
+}
+
+ul li ul li {
+    margin-left:15px;
+}
+
+table {
+ margin-top:10px;   
+}
+tr {
+    border:1px solid #ccc;
+}
+th {
+ font-weight:bold;   
+}
+
+td {
+    border:1px solid #ccc;
+}
+
+th, td {
+    text-align:left;
+ padding:5px;   
+}
+/* GRID SYSTEM */
+.container {
+    width:965px;
+    margin:20px auto;
+}
+
+.grid-primary {
+width: 620px;
+display: inline-block;
+margin-right: 20px;
+vertical-align: top;
+}
+
+.grid-secondary {
+    width:320px;   
+    display:inline-block;
+}
+
+
+.grid-primary img {
+max-width:100%;
+}
+
+.grid-secondary img {
+height:auto;
+width:100%;
+max-width:300px;
+}
+
+/* GRID SYSTEM */
+
+
+
+
+#content {
+    margin-top:10px;
+    min-height:640px;
+}
+
+#content .grid-primary, #content .grid-secondary {
+}
+
+#content .grid-primary .container, #content .grid-secondary .container {
+background:#FFF;
+padding:10px;
+margin:0 auto;
+width:auto;
+margin-bottom:10px;
+box-shadow:1px 1px 1px #000;
+}
+
+
+
+
+
+.grid-primary h2, .grid-secondary h2  {
+    text-transform:uppercase;
+    font-family: 'Oswald', sans-serif; 
+    background:#346C6B;
+    color:#FFF;
+    padding:10px;
+    font-size:16px;
+}
+
+nav h3 {
+ color:#FFF;   
+}

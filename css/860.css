@@ -1,0 +1,21 @@
+html, body {
+
+}
+
+.container {
+ width:860px;   
+}
+
+.grid-primary {
+ width:520px;
+}
+
+.grid-secondary {
+ width:300px;  
+min-width:300px;
+}
+
+.content img {
+ width:100%;
+height:auto;
+}
