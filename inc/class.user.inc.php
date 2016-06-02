@@ -1,7 +1,7 @@
 <?php
 class user {
 	protected $dbh; 
-	public function __construct(PDO $dbh) {
+	public function __construct() {
 		$this->dbh = db_loader::connect();
 	}
     public function create($username, $password) {
