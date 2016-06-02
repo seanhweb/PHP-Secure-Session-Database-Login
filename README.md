@@ -40,4 +40,4 @@ $session->update_session();
  	- Has it been longer than the defined session time? 
  	- Is there a valid user agent string? 
  	- Is the session unique ID the same as the servers? 
-If any of these are false, it runs the "destory session" function and asks the user to login again. 
+If any of these are false, it runs the "destroy session" function and asks the user to login again. 
