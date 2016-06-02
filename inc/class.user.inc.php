@@ -32,7 +32,7 @@ class user {
             $user_id = $row['uid'];
         }
         if ( crypt($password, $user->password) === $user->password) {
-            $session = new session($this->dbh);
+            $session = new session();
             $session->begin_database_session($username,$user_id);
             //password matches, process in session
         }

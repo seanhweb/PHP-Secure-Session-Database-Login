@@ -40,7 +40,6 @@ class session  {
 		}
 	}
 	public function begin_database_session($username, $user_id) {
-		if($this->is_logged_in() == false) {
 			$unique = substr(md5(rand()), 0, 30);
 			$_SESSION['HTTP_USER_AGENT'] = md5($_SERVER['HTTP_USER_AGENT']); 
 			$_SESSION['UNIQUE_ID'] = $unique;
@@ -54,7 +53,7 @@ class session  {
 			$insert->bindValue(':unique_id', $unique, PDO::PARAM_STR);
 			$insert->bindValue(':user_id', $user_id, PDO::PARAM_INT);
 			$insert->execute();
-		}
+			header('Location: '.POST_LOGIN); 
 	}
 	public function update_session() {
 		$time = $_SERVER['REQUEST_TIME']; 
