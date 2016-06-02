@@ -20,13 +20,7 @@ On your index.php, you would create a log in form. The action, however you choos
 $user = new user; 
 $user->login($username,$password);
 ```
-The login function checks the database for the username and password. If all is well, it then starts a session. 
-You can then check to see if the login was sucessful, and redirect them to a secure page. That logic shown is: 
-````
-if($session->is_logged_in() == true) {
-	header('Location: '.POST_LOGIN); 
-}
-````
+The login function checks the database for the username and password. If all is well, it then runs the "begin_database_session" function, which redirects them to the post login page in your config.ph. 
 ##### Secure Pages
 For every page you would like to be secure, include the following code.
 ````
