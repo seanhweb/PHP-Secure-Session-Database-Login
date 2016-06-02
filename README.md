@@ -20,7 +20,7 @@ On your index.php, you would create a log in form. The action, however you choos
 $user = new user; 
 $user->login($username,$password);
 ```
-The login function checks the database for the username and password. If all is well, it then runs the "begin_database_session" function, which redirects them to the post login page in your config.ph. 
+The login function checks the database for the username and password. If all is well, it then runs the "begin_database_session" function, which redirects them to the post login page in your config.php. 
 ##### Secure Pages
 For every page you would like to be secure, include the following code.
 ````
