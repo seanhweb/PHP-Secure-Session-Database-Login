@@ -30,11 +30,8 @@ if($session->is_logged_in() == true) {
 ##### Secure Pages
 For every page you would like to be secure, include the following code.
 ````
-<?php
-include('inc/classes.inc.php');
 $session = new session;
 $session->update_session();
-?>
 ````
  When this code is executed, it checks the following. 
  	- Has it been longer than the defined session time? 
